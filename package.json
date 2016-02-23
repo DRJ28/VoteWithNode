@@ -1,0 +1,23 @@
+{
+  "name": "voteonnode",
+  "version": "1.0.0",
+  "description": "vote with node server",
+  "main": "index.html",
+  "scripts": {
+    "test": "node server.js",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DRJ28/VoteWithNode.git"
+  },
+  "author": "dheerajmehta10275@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DRJ28/VoteWithNode/issues"
+  },
+  "homepage": "https://github.com/DRJ28/VoteWithNode#readme",
+  "dependencies":{
+    "express": "4.0.0"
+  }
+}
