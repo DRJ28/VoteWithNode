@@ -60,23 +60,58 @@ app.use(express.static('public'));
 
 app.get('/index.html', function (req, res) {
 	console.log(req.url.toString(1));
-	console.log('asdfghjkl');
+	//console.log('asdfghjkl---' + req.app);
 	//var file = fileSystem.readFileSync(req.url.toString(1));
 	//res.end(index.html);
    	res.sendFile( __dirname + "/" + "index.html" );
 });
+/*app.get('/', function (req, res) {
+	console.log('sending jsvascript file');
+   	res.sendFile( __dirname + "/" + "script.js" );
+});*/
 
-app.get('/submitValue', function (req, res) {
-	console.log('in submitValue');
-	console.log(req.query.name);
+app.post('/submitValue', function (req, res) {
+	console.log('in submitValue POST');
+	//console.log(req.query.name);
    // Prepare output in JSON format
+   console.log(req.method);
+   console.log(req.ip);
+   var str = JSON.stringify(req.method);
+   console.log(str);
    response = {
-       value:req.query.weekend
+       value:'req'//req.query.weekend
    };
    console.log(response);
+   //res.attachment( __dirname + "/"+'path/to/logo.png');
+   //console.log('image sent');
+   
    res.end(JSON.stringify(response));
+   console.log('object sent');
 });
-
+app.get('/submitValue', function (req, res) {
+	console.log('in submitValue GET');
+	//console.log(req.query.name);
+   // Prepare output in JSON format
+   console.log(req.method);
+   console.log(req.ip);
+   console.log(req.query.weekend);
+   var str = JSON.stringify(req.method);
+   console.log(str);
+   response = {
+       value:req.query.weekend//req.query.weekend
+   };
+   console.log(response);
+   //res.attachment( __dirname + "/"+'path/to/logo.png');
+   //console.log('image sent');
+   
+   res.end(JSON.stringify(response));
+   console.log('object sent');
+});
+app.get('/logo.PNG', function(res, req){
+	console.log('+++++++++' +res.url.toString(1));
+	res.download('logo.PNG');
+	res.sendFile(__dirname + "/"+"error.html");
+});
 var server = app.listen(8081,'localhost' ,function () {
 
   var host = server.address().address
