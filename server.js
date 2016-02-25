@@ -98,7 +98,7 @@ app.get('/submitValue', function (req, res) {
    var str = JSON.stringify(req.method);
    console.log(str);
    response = {
-       value:req.query.weekend//req.query.weekend
+       value:'always gooood'//req.query.weekend//req.query.weekend
    };
    console.log(response);
    //res.attachment( __dirname + "/"+'path/to/logo.png');

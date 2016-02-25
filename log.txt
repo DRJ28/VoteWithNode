@@ -1,0 +1,177 @@
+Thu, 25 Feb 2016 17:35:06 GMT express:application booting in development mode
+Thu, 25 Feb 2016 17:35:06 GMT express:router:layer new 
+Thu, 25 Feb 2016 17:35:06 GMT express:router use / query
+Thu, 25 Feb 2016 17:35:06 GMT express:router:layer new 
+Thu, 25 Feb 2016 17:35:06 GMT express:router use / expressInit
+Thu, 25 Feb 2016 17:35:06 GMT express:router:layer new 
+Thu, 25 Feb 2016 17:35:06 GMT express:router use / staticMiddleware
+Thu, 25 Feb 2016 17:35:06 GMT express:router:route new /index.html
+Thu, 25 Feb 2016 17:35:06 GMT express:router:layer new /index.html
+Thu, 25 Feb 2016 17:35:06 GMT express:router:route get /index.html
+Thu, 25 Feb 2016 17:35:06 GMT express:router:route new /submitValue
+Thu, 25 Feb 2016 17:35:06 GMT express:router:layer new /submitValue
+Thu, 25 Feb 2016 17:35:06 GMT express:router:route post /submitValue
+Thu, 25 Feb 2016 17:35:06 GMT express:router:route new /submitValue
+Thu, 25 Feb 2016 17:35:06 GMT express:router:layer new /submitValue
+Thu, 25 Feb 2016 17:35:06 GMT express:router:route get /submitValue
+Thu, 25 Feb 2016 17:35:06 GMT express:router:route new /logo.PNG
+Thu, 25 Feb 2016 17:35:06 GMT express:router:layer new /logo.PNG
+Thu, 25 Feb 2016 17:35:06 GMT express:router:route get /logo.PNG
+App listening at http://127.0.0.1:8081
+Thu, 25 Feb 2016 17:35:21 GMT express:router dispatching GET /index.html
+Thu, 25 Feb 2016 17:35:21 GMT express:router trim prefix () from url /index.html
+Thu, 25 Feb 2016 17:35:21 GMT express:router query  : /index.html
+Thu, 25 Feb 2016 17:35:21 GMT express:router trim prefix () from url /index.html
+Thu, 25 Feb 2016 17:35:21 GMT express:router expressInit  : /index.html
+Thu, 25 Feb 2016 17:35:21 GMT express:router trim prefix () from url /index.html
+Thu, 25 Feb 2016 17:35:21 GMT express:router staticMiddleware  : /index.html
+Thu, 25 Feb 2016 17:35:22 GMT express:router dispatching GET /angular.js
+Thu, 25 Feb 2016 17:35:22 GMT express:router trim prefix () from url /angular.js
+Thu, 25 Feb 2016 17:35:22 GMT express:router query  : /angular.js
+Thu, 25 Feb 2016 17:35:22 GMT express:router trim prefix () from url /angular.js
+Thu, 25 Feb 2016 17:35:22 GMT express:router expressInit  : /angular.js
+Thu, 25 Feb 2016 17:35:22 GMT express:router trim prefix () from url /angular.js
+Thu, 25 Feb 2016 17:35:22 GMT express:router staticMiddleware  : /angular.js
+Thu, 25 Feb 2016 17:35:22 GMT express:router dispatching GET /script.js
+Thu, 25 Feb 2016 17:35:22 GMT express:router trim prefix () from url /script.js
+Thu, 25 Feb 2016 17:35:22 GMT express:router query  : /script.js
+Thu, 25 Feb 2016 17:35:22 GMT express:router trim prefix () from url /script.js
+Thu, 25 Feb 2016 17:35:22 GMT express:router expressInit  : /script.js
+Thu, 25 Feb 2016 17:35:22 GMT express:router trim prefix () from url /script.js
+Thu, 25 Feb 2016 17:35:22 GMT express:router staticMiddleware  : /script.js
+Thu, 25 Feb 2016 17:35:35 GMT express:router dispatching GET /submitValue
+Thu, 25 Feb 2016 17:35:35 GMT express:router trim prefix () from url /submitValue
+Thu, 25 Feb 2016 17:35:35 GMT express:router query  : /submitValue
+Thu, 25 Feb 2016 17:35:35 GMT express:router trim prefix () from url /submitValue
+Thu, 25 Feb 2016 17:35:35 GMT express:router expressInit  : /submitValue
+Thu, 25 Feb 2016 17:35:35 GMT express:router trim prefix () from url /submitValue
+Thu, 25 Feb 2016 17:35:35 GMT express:router staticMiddleware  : /submitValue
+in submitValue GET
+GET
+127.0.0.1
+undefined
+Thu, 25 Feb 2016 17:35:35 GMT express:application default 500
+Thu, 25 Feb 2016 17:36:53 GMT express:application booting in development mode
+Thu, 25 Feb 2016 17:36:53 GMT express:router:layer new 
+Thu, 25 Feb 2016 17:36:53 GMT express:router use / query
+Thu, 25 Feb 2016 17:36:53 GMT express:router:layer new 
+Thu, 25 Feb 2016 17:36:53 GMT express:router use / expressInit
+Thu, 25 Feb 2016 17:36:53 GMT express:router:layer new 
+Thu, 25 Feb 2016 17:36:53 GMT express:router use / staticMiddleware
+Thu, 25 Feb 2016 17:36:53 GMT express:router:route new /index.html
+Thu, 25 Feb 2016 17:36:53 GMT express:router:layer new /index.html
+Thu, 25 Feb 2016 17:36:53 GMT express:router:route get /index.html
+Thu, 25 Feb 2016 17:36:53 GMT express:router:route new /submitValue
+Thu, 25 Feb 2016 17:36:53 GMT express:router:layer new /submitValue
+Thu, 25 Feb 2016 17:36:53 GMT express:router:route post /submitValue
+Thu, 25 Feb 2016 17:36:53 GMT express:router:route new /submitValue
+Thu, 25 Feb 2016 17:36:53 GMT express:router:layer new /submitValue
+Thu, 25 Feb 2016 17:36:53 GMT express:router:route get /submitValue
+Thu, 25 Feb 2016 17:36:53 GMT express:router:route new /logo.PNG
+Thu, 25 Feb 2016 17:36:53 GMT express:router:layer new /logo.PNG
+Thu, 25 Feb 2016 17:36:53 GMT express:router:route get /logo.PNG
+App listening at http://127.0.0.1:8081
+Thu, 25 Feb 2016 17:37:02 GMT express:router dispatching GET /submitValue
+Thu, 25 Feb 2016 17:37:02 GMT express:router trim prefix () from url /submitValue
+Thu, 25 Feb 2016 17:37:02 GMT express:router query  : /submitValue
+Thu, 25 Feb 2016 17:37:02 GMT express:router trim prefix () from url /submitValue
+Thu, 25 Feb 2016 17:37:02 GMT express:router expressInit  : /submitValue
+Thu, 25 Feb 2016 17:37:02 GMT express:router trim prefix () from url /submitValue
+Thu, 25 Feb 2016 17:37:02 GMT express:router staticMiddleware  : /submitValue
+in submitValue GET
+GET
+127.0.0.1
+undefined
+"GET"
+{ value: undefined }
+object sent
+Thu, 25 Feb 2016 17:38:33 GMT express:router dispatching GET /index.html
+Thu, 25 Feb 2016 17:38:33 GMT express:router trim prefix () from url /index.html
+Thu, 25 Feb 2016 17:38:33 GMT express:router query  : /index.html
+Thu, 25 Feb 2016 17:38:33 GMT express:router trim prefix () from url /index.html
+Thu, 25 Feb 2016 17:38:33 GMT express:router expressInit  : /index.html
+Thu, 25 Feb 2016 17:38:33 GMT express:router trim prefix () from url /index.html
+Thu, 25 Feb 2016 17:38:33 GMT express:router staticMiddleware  : /index.html
+Thu, 25 Feb 2016 17:38:34 GMT express:router dispatching GET /script.js
+Thu, 25 Feb 2016 17:38:34 GMT express:router trim prefix () from url /script.js
+Thu, 25 Feb 2016 17:38:34 GMT express:router query  : /script.js
+Thu, 25 Feb 2016 17:38:34 GMT express:router trim prefix () from url /script.js
+Thu, 25 Feb 2016 17:38:34 GMT express:router expressInit  : /script.js
+Thu, 25 Feb 2016 17:38:34 GMT express:router trim prefix () from url /script.js
+Thu, 25 Feb 2016 17:38:34 GMT express:router staticMiddleware  : /script.js
+Thu, 25 Feb 2016 17:38:34 GMT express:router dispatching GET /angular.js
+Thu, 25 Feb 2016 17:38:34 GMT express:router trim prefix () from url /angular.js
+Thu, 25 Feb 2016 17:38:34 GMT express:router query  : /angular.js
+Thu, 25 Feb 2016 17:38:34 GMT express:router trim prefix () from url /angular.js
+Thu, 25 Feb 2016 17:38:34 GMT express:router expressInit  : /angular.js
+Thu, 25 Feb 2016 17:38:34 GMT express:router trim prefix () from url /angular.js
+Thu, 25 Feb 2016 17:38:34 GMT express:router staticMiddleware  : /angular.js
+Thu, 25 Feb 2016 17:38:40 GMT express:router dispatching GET /submitValue
+Thu, 25 Feb 2016 17:38:40 GMT express:router trim prefix () from url /submitValue
+Thu, 25 Feb 2016 17:38:40 GMT express:router query  : /submitValue
+Thu, 25 Feb 2016 17:38:40 GMT express:router trim prefix () from url /submitValue
+Thu, 25 Feb 2016 17:38:40 GMT express:router expressInit  : /submitValue
+Thu, 25 Feb 2016 17:38:40 GMT express:router trim prefix () from url /submitValue
+Thu, 25 Feb 2016 17:38:40 GMT express:router staticMiddleware  : /submitValue
+in submitValue GET
+GET
+127.0.0.1
+undefined
+"GET"
+{ value: undefined }
+object sent
+Thu, 25 Feb 2016 17:39:07 GMT express:application booting in development mode
+Thu, 25 Feb 2016 17:39:07 GMT express:router:layer new 
+Thu, 25 Feb 2016 17:39:07 GMT express:router use / query
+Thu, 25 Feb 2016 17:39:07 GMT express:router:layer new 
+Thu, 25 Feb 2016 17:39:07 GMT express:router use / expressInit
+Thu, 25 Feb 2016 17:39:07 GMT express:router:layer new 
+Thu, 25 Feb 2016 17:39:07 GMT express:router use / staticMiddleware
+Thu, 25 Feb 2016 17:39:07 GMT express:router:route new /index.html
+Thu, 25 Feb 2016 17:39:07 GMT express:router:layer new /index.html
+Thu, 25 Feb 2016 17:39:07 GMT express:router:route get /index.html
+Thu, 25 Feb 2016 17:39:07 GMT express:router:route new /submitValue
+Thu, 25 Feb 2016 17:39:07 GMT express:router:layer new /submitValue
+Thu, 25 Feb 2016 17:39:07 GMT express:router:route post /submitValue
+Thu, 25 Feb 2016 17:39:07 GMT express:router:route new /submitValue
+Thu, 25 Feb 2016 17:39:07 GMT express:router:layer new /submitValue
+Thu, 25 Feb 2016 17:39:07 GMT express:router:route get /submitValue
+Thu, 25 Feb 2016 17:39:07 GMT express:router:route new /logo.PNG
+Thu, 25 Feb 2016 17:39:07 GMT express:router:layer new /logo.PNG
+Thu, 25 Feb 2016 17:39:07 GMT express:router:route get /logo.PNG
+App listening at http://127.0.0.1:8081
+Thu, 25 Feb 2016 17:39:16 GMT express:router dispatching GET /index.html
+Thu, 25 Feb 2016 17:39:16 GMT express:router trim prefix () from url /index.html
+Thu, 25 Feb 2016 17:39:16 GMT express:router query  : /index.html
+Thu, 25 Feb 2016 17:39:16 GMT express:router trim prefix () from url /index.html
+Thu, 25 Feb 2016 17:39:16 GMT express:router expressInit  : /index.html
+Thu, 25 Feb 2016 17:39:16 GMT express:router trim prefix () from url /index.html
+Thu, 25 Feb 2016 17:39:16 GMT express:router staticMiddleware  : /index.html
+Thu, 25 Feb 2016 17:39:17 GMT express:router dispatching GET /script.js
+Thu, 25 Feb 2016 17:39:17 GMT express:router trim prefix () from url /script.js
+Thu, 25 Feb 2016 17:39:17 GMT express:router query  : /script.js
+Thu, 25 Feb 2016 17:39:17 GMT express:router trim prefix () from url /script.js
+Thu, 25 Feb 2016 17:39:17 GMT express:router expressInit  : /script.js
+Thu, 25 Feb 2016 17:39:17 GMT express:router trim prefix () from url /script.js
+Thu, 25 Feb 2016 17:39:17 GMT express:router staticMiddleware  : /script.js
+Thu, 25 Feb 2016 17:39:17 GMT express:router dispatching GET /angular.js
+Thu, 25 Feb 2016 17:39:17 GMT express:router trim prefix () from url /angular.js
+Thu, 25 Feb 2016 17:39:17 GMT express:router query  : /angular.js
+Thu, 25 Feb 2016 17:39:17 GMT express:router trim prefix () from url /angular.js
+Thu, 25 Feb 2016 17:39:17 GMT express:router expressInit  : /angular.js
+Thu, 25 Feb 2016 17:39:17 GMT express:router trim prefix () from url /angular.js
+Thu, 25 Feb 2016 17:39:17 GMT express:router staticMiddleware  : /angular.js
+Thu, 25 Feb 2016 17:39:21 GMT express:router dispatching GET /submitValue
+Thu, 25 Feb 2016 17:39:21 GMT express:router trim prefix () from url /submitValue
+Thu, 25 Feb 2016 17:39:21 GMT express:router query  : /submitValue
+Thu, 25 Feb 2016 17:39:21 GMT express:router trim prefix () from url /submitValue
+Thu, 25 Feb 2016 17:39:21 GMT express:router expressInit  : /submitValue
+Thu, 25 Feb 2016 17:39:21 GMT express:router trim prefix () from url /submitValue
+Thu, 25 Feb 2016 17:39:21 GMT express:router staticMiddleware  : /submitValue
+in submitValue GET
+GET
+127.0.0.1
+undefined
+"GET"
+{ value: 'always gooood' }
+object sent
