@@ -54,7 +54,11 @@ http.createServer((request, response) => {
 });*/
 //var fileSystem = require('fs');
 var express = require('express');
+var bodyParser = require("body-parser");
 var app = express();
+//Here we are configuring express to use body-parser as middle-ware.
+app.use(bodyParser.urlencoded({ extended: false }));
+app.use(bodyParser.json());
 
 app.use(express.static('public'));
 
@@ -65,21 +69,14 @@ app.get('/index.html', function (req, res) {
 	//res.end(index.html);
    	res.sendFile( __dirname + "/" + "index.html" );
 });
-/*app.get('/', function (req, res) {
-	console.log('sending jsvascript file');
-   	res.sendFile( __dirname + "/" + "script.js" );
-});*/
 
 app.post('/submitValue', function (req, res) {
 	console.log('in submitValue POST');
-	//console.log(req.query.name);
-   // Prepare output in JSON format
-   console.log(req.method);
-   console.log(req.ip);
-   var str = JSON.stringify(req.method);
-   console.log(str);
+   	console.log(typeof(req.params));
+    var str = JSON.stringify(req.body.name);
+    console.log('after strigify '+ str);
    response = {
-       value:'req'//req.query.weekend
+       value: str + ' good luck for your weekdays'//req.query.weekend
    };
    console.log(response);
    //res.attachment( __dirname + "/"+'path/to/logo.png');
@@ -101,8 +98,6 @@ app.get('/submitValue', function (req, res) {
        value:'always gooood'//req.query.weekend//req.query.weekend
    };
    console.log(response);
-   //res.attachment( __dirname + "/"+'path/to/logo.png');
-   //console.log('image sent');
    
    res.end(JSON.stringify(response));
    console.log('object sent');
@@ -110,7 +105,7 @@ app.get('/submitValue', function (req, res) {
 app.get('/logo.PNG', function(res, req){
 	console.log('+++++++++' +res.url.toString(1));
 	res.download('logo.PNG');
-	res.sendFile(__dirname + "/"+"error.html");
+	//res.sendFile(__dirname + "/"+"error.html");
 });
 var server = app.listen(8081,'localhost' ,function () {
 
