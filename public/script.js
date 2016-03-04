@@ -4,7 +4,7 @@ module.controller('controllerName',['$scope', '$http',function ($scope, $http) {
 	console.log($scope.weekend);
 	$scope.sendValue = function() {
 		var dataObj = {
-				name : 'Dheeraj',
+				name : 'DheerajKumar',
 				employees : 'Accenture',
 				headoffice : 'Magarpatta'
 		};
