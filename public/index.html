@@ -18,6 +18,16 @@
 		<div>
 			{{returnMessage}}
 		</div>
+		<div>
+			Get total count : <input type="button" ng-click='result=!result' value="Count"></input>
+			<div ng-show='result'> 
+				<input type="text" ng-model="username" placeholder="USERNAME"></input>
+				<input type="password" ng-model="password" placeholder="PASSWORD"></input>
+				<input type="button" value="Submit" ng-click='getTotalCount()'></input>
+				<br >{{good}}<br>{{ok}}<br>{{not_good}}
+			<!-- results: Good= {{good}}<br>Not good= {{not_good}}<br>Ok= {{ok}} -->
+			</div>
+		</div>
 		<!-- <form action="http://127.0.0.1:8081/submitValue" method="GET">
 			<h3>How was your weekend?</h3>	
 			<input type="radio" value="good" name="weekend">Good</input>

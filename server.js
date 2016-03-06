@@ -55,12 +55,27 @@ http.createServer((request, response) => {
 //var fileSystem = require('fs');
 var express = require('express');
 var bodyParser = require("body-parser");
+var fileSystem = require("fs");
 var app = express();
 //Here we are configuring express to use body-parser as middle-ware.
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
 app.use(express.static('public'));
+
+var server = app.listen(8081 ,function () {
+
+  //var host = server.address().address
+  var port = server.address().port
+
+  console.log("App listening at http://%s:%s", port)
+
+})
+
+app.get('/', function(req, res){
+	console.log('no url******');
+	console.log(req.url);
+});
 
 app.get('/index.html', function (req, res) {
 	console.log(req.url.toString(1));
@@ -70,21 +85,35 @@ app.get('/index.html', function (req, res) {
    	res.sendFile( __dirname + "/" + "index.html" );
 });
 
+
+var readFrom = require('./response.json');
 app.post('/submitValue', function (req, res) {
-	console.log('in submitValue POST');
-   	console.log(typeof(req.params));
-    var str = JSON.stringify(req.body.name);
-    console.log('after strigify '+ str);
+    var name = JSON.stringify(req.body.name);
+    var choice = req.body.choice;
    response = {
-       value: str + ' good luck for your weekdays'//req.query.weekend
-   };
-   console.log(response);
-   //res.attachment( __dirname + "/"+'path/to/logo.png');
-   //console.log('image sent');
-   
+       value: choice//req.query.weekend --name + ' good luck for your weekdays, this weekend was ' + choice
+   };   
+   readFrom.userChoice.push(response);
+   fileSystem.writeFile('./response.json', JSON.stringify(readFrom));
    res.end(JSON.stringify(response));
-   console.log('object sent');
 });
+app.post('/gettotalcount', function(request, response){
+	var name = request.body.username;
+	var password = request.body.password;
+	console.log('sending all saved response from user ' + name);
+	var readUserList = require('./auth.json');
+	//if (request.body.username =) {}
+	//console.log(readUserList.userCredentials[0].username);
+	readUserList.userCredentials.forEach(function(obj){
+		console.log(obj.username);
+
+		if (obj.username === name && obj.password === password) {
+			console.log('user found');
+			response.end(JSON.stringify(readFrom));
+		}
+	});
+});
+
 app.get('/submitValue', function (req, res) {
 	console.log('in submitValue GET');
 	//console.log(req.query.name);
@@ -107,11 +136,4 @@ app.get('/logo.PNG', function(res, req){
 	res.download('logo.PNG');
 	//res.sendFile(__dirname + "/"+"error.html");
 });
-var server = app.listen(8081,'localhost' ,function () {
 
-  var host = server.address().address
-  var port = server.address().port
-
-  console.log("App listening at http://%s:%s", host, port)
-
-})
